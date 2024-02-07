@@ -13,19 +13,21 @@ const Currency = () => {
         });
     };
 
+    const label = `Currency (${currency})`;
+
     return (
-        // <div className="form-group">
         <div className="dropdown">
+            <label htmlFor="currencyDropdown">{label}</label>
             <select
                 id="currencyDropdown"
                 className="form-control currency-dropdown"
                 value={currency}
                 onChange={handleCurrencyChange}
             >
-                <option value="$">Currency ($ Dollar)</option>
-                <option value="£">Currency (£ Pound)</option>
-                <option value="€">Currency (€ Euro)</option>
-                <option value="₹">Currency (₹ Rupee)</option>
+                <option value="$">$ Dollar</option>
+                <option value="£">£ Pound</option>
+                <option value="€">€ Euro</option>
+                <option value="₹">₹ Rupee</option>
             </select>
         </div>
     );
