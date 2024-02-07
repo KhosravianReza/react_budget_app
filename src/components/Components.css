@@ -1,0 +1,6 @@
+/* Set green background for the dropdown */
+.form-control.currency-dropdown {
+    background-color: #28a745; /* Green color */
+    color: black; /* White text color */
+    border: #28a745;
+}
